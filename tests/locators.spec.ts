@@ -63,15 +63,15 @@ test('Playwright Basic Actions and Assertions', async ({ page }) => {
   await page.waitForTimeout(3000);
 
 //Page Navigation
-  await page.goto('https://xqa.io/');
-  await page.goBack();
-  await expect(page).toHaveURL('https://xqa.io/practice/text-box');
-  await page.goForward();
-  await expect(page).toHaveURL('https://xqa.io/');
-  await page.reload();
-  await expect(page).toHaveURL('https://xqa.io/');
+ await page.goto('https://xqa.io/');
+   await page.goBack();
+   await expect(page).toHaveURL('https://xqa.io/practice/text-box');
+   await page.goForward();
+   await expect(page).toHaveURL('https://xqa.io/');
+   await page.reload();
+   await expect(page).toHaveURL('https://xqa.io/');
 
- await page.waitForTimeout(3000);
+   await page.waitForTimeout(3000);
 
   
 
